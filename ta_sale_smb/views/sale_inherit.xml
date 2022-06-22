@@ -5,8 +5,10 @@
 	    <field name="inherit_id" ref="sale.view_order_form"/>
 	    <field name="arch" type="xml">
 			<xpath expr="//tree/field[@name='product_id']" position="after">
-				<field name="advance_in_percentage"/>
-				<field name="commission_percentage"/>
+				<field name="advance_in_percentage" attrs="{'readonly': ['|', ('is_commission_product', '=', True),('state', '!=', 'draft')]}"/>
+				<field name="commission_percentage" attrs="{'readonly': ['|', ('is_advance_product', '=', True),('state', '!=', 'draft')]}"/>
+				<field name="is_commission_product" readonly="1" optional="hide"/>
+				<field name="is_advance_product" readonly="1" optional="hide"/>
 			</xpath>
         </field>
     </record>
