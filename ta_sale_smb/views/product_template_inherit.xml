@@ -1,0 +1,19 @@
+<odoo>
+	<record id="ta_product_template_inherit_form" model="ir.ui.view">
+	    <field name="name">ta.product.template.inherit.form</field>
+	    <field name="model">product.template</field>
+	    <field name="inherit_id" ref="product.product_template_only_form_view"/>
+	    <field name="arch" type="xml">
+			<xpath expr="//div[@name='options']" position="inside">
+				<span class="d-inline-block">
+					 <field name="is_advance_product"/>
+					 <label for="is_advance_product"/>
+				</span>
+				<span class="d-inline-block">
+					 <field name="is_commission_product"/>
+					 <label for="is_commission_product"/>
+				</span>
+			</xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+	<record id="ta_customer_form_inherit" model="ir.ui.view">
+	    <field name="name">ta.customer.form.inherit</field>
+	    <field name="model">res.partner</field>
+	    <field name="inherit_id" ref="base.view_partner_form"/>
+	    <field name="arch" type="xml">
+			<xpath expr="//field[@name='property_product_pricelist']" position="after">
+				<field name="default_advance_in_percentage"/>
+				<field name="default_commission_percentage"/>
+			</xpath>
+        </field>
+    </record>
+</odoo>
