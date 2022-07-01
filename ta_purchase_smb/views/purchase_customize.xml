@@ -1,0 +1,22 @@
+<odoo>
+	<record id="ta_purchase_inherit_form" model="ir.ui.view">
+	    <field name="name">ta.purchase.inherit.form</field>
+	    <field name="model">purchase.order</field>
+	    <field name="inherit_id" ref="purchase.purchase_order_form"/>
+	    <field name="arch" type="xml">
+			<xpath expr="//tree/field[@name='product_qty']" position="before">
+				<field name="x_size"/>
+				<field name="x_color"/>
+				<field name="x_small"/>
+				<field name="x_medium"/>
+				<field name="x_large"/>
+				<field name="x_xlarge"/>
+				<field name="x_36"/>
+				<field name="x_37"/>
+				<field name="x_38"/>
+				<field name="x_39"/>
+				<field name="x_40"/>
+			</xpath>
+        </field>
+    </record>
+</odoo>
