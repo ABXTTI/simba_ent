@@ -1,0 +1,21 @@
+<odoo>
+	<record id="view_product_size_tree" model="ir.ui.view">
+  		<field name="name">Product Size Tree</field>
+  		<field name="model">product.size</field>
+  		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+    		</tree>
+  		</field>
+	</record>
+
+    <record id="view_product_size_form" model="ir.ui.view">
+  		<field name="name">Product Size form</field>
+  		<field name="model">product.size</field>
+  		<field name="arch" type="xml">
+			<form>
+				<field name="name"/>
+    		</form>
+  		</field>
+	</record>
+</odoo>

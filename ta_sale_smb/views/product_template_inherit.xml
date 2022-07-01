@@ -14,6 +14,9 @@
 					 <label for="is_commission_product"/>
 				</span>
 			</xpath>
+			<xpath expr="//field[@name='uom_po_id']" position="after">
+				<field name="product_size_ids"  widget="many2many_tags"/>
+			</xpath>
         </field>
     </record>
 </odoo>

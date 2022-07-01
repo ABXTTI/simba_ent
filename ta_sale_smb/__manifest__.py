@@ -17,7 +17,8 @@
         'web_enterprise',
     ],
     'data': [
-       # 'views/ir.model.access.csv.xml',
+        'security/ir.model.access.csv',
+        'views/product_size.xml',
         'views/product_template_inherit.xml',
         'views/customers_form_inherit.xml',
         'views/sale_inherit.xml',
