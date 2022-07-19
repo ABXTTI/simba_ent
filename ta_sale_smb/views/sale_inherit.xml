@@ -11,17 +11,17 @@
 				<field name="is_advance_product" readonly="1" optional="hide"/>
 			</xpath>
 			<xpath expr="//tree/field[@name='product_uom_qty']" position="before">
-				<field name="x_size"/>
 				<field name="x_color"/>
-				<field name="x_small"/>
-				<field name="x_medium"/>
-				<field name="x_large"/>
-				<field name="x_xlarge"/>
-				<field name="x_36"/>
-				<field name="x_37"/>
-				<field name="x_38"/>
-				<field name="x_39"/>
-				<field name="x_40"/>
+				<field name="x_size"/>
+<!--				<field name="x_small"/>-->
+<!--				<field name="x_medium"/>-->
+<!--				<field name="x_large"/>-->
+<!--				<field name="x_xlarge"/>-->
+<!--				<field name="x_36"/>-->
+<!--				<field name="x_37"/>-->
+<!--				<field name="x_38"/>-->
+<!--				<field name="x_39"/>-->
+<!--				<field name="x_40"/>-->
 			</xpath>
         </field>
     </record>
